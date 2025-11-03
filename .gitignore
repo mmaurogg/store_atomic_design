@@ -1,31 +1,61 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
 # Flutter/Dart/Pub related
-# Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspeclock.
-/pubspec.lock
-**/doc/api/
 .dart_tool/
-.flutter-plugins-dependencies
-/build/
-/coverage/
+.packages
+pubspec.lock
+
+# Build outputs
+build/
+example/build/
+
+# Generated plugin registrant
+generated_plugin_registrant.dart
+
+# iOS/Android (solo en example/)
+example/ios/Flutter/Flutter.framework/
+example/ios/Flutter/Flutter.podspec
+example/ios/.symlinks/
+example/ios/Pods/
+example/ios/Runner/GeneratedPluginRegistrant.*
+example/android/.gradle/
+example/android/app/build/
+example/android/local.properties
+
+# macOS
+example/macos/Flutter/ephemeral/
+example/macos/Pods/
+example/macos/build/
+
+# Web
+example/.firebase/
+example/web/generated_plugin_registrant.dart
+
+# Linux/Windows
+example/linux/flutter/ephemeral/
+example/linux/build/
+example/windows/flutter/ephemeral/
+example/windows/build/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Tests and coverage
+coverage/
+*.lcov
+
+# Logs
+*.log
+
+# Firebase/Secrets
+google-services.json
+GoogleService-Info.plist
+.env
+
+# Temporary files
+*.tmp
+*.swp
